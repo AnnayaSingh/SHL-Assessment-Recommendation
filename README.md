@@ -18,3 +18,16 @@ This project implements a semantic search based recommendation engine to match h
 - Sentence-Transformers
 - FastAPI
 - Pandas
+## API Endpoints
+
+- GET /health  
+Returns service status.
+
+- POST /recommend  
+Request:
+{
+  "query": "Looking for a Java developer",
+  "top_k": 5
+}
+
+Returns top-k recommended SHL assessment URLs.
